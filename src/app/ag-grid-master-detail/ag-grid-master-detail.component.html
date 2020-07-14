@@ -1,0 +1,30 @@
+<br>
+<button (click)="onExportClick()">Export excel</button>
+<br>
+<ag-grid-angular
+  #agGrid
+  style="width: 100%; height: 500px;"
+  id="myGrid"
+  class="ag-theme-alpine"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [rowData]="rowData"
+
+  [rowModelType]="rowModelType"
+
+  [alwaysShowVerticalScroll]="true"
+  [pagination]="true"
+  [paginationPageSize]="rowPerPage"
+  [cacheBlockSize]="rowPerPage"
+
+  [animateRows]="true"
+  
+  [fullWidthCellRenderer]="true"
+
+  [masterDetail]="true"
+  [detailCellRendererParams]="detailCellRendererParams"
+  [defaultExportParams]="defaultExportParams"
+  [excelStyles]="excelStyles"
+
+  (gridReady)="onGridReady($event)"
+></ag-grid-angular>

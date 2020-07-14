@@ -16,11 +16,6 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AG-Grid-lab'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('AG-Grid-lab');
-  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
